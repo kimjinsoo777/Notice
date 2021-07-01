@@ -7,7 +7,9 @@
        ,title
        ,user
        ,date_format(regdate,'%Y-%m-%d') as regdate
-       ,view FROM board b,(SELECT @rownum :=0) tmp ORDER BY bno;
+       ,view 
+       FROM board b,(SELECT @rownum :=0) tmp 
+       ORDER BY bno;
     </select>
      
     <insert id ="NoticeDAO.noticeWriteAction">
