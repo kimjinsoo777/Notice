@@ -34,6 +34,10 @@ function fncGoAfterErrorPage(){
 		</div>
 	</div>
 </div>
-
+<%
+          Throwable ex = (Throwable)request.getAttribute("exception");
+          ex.printStackTrace();
+%>
 </body>
+
 </html>
